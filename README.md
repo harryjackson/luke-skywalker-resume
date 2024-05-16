@@ -8,6 +8,10 @@ To generate the resume I used TeXstudio which was extremely easy to use. The
 only change I needed to make was under Preferences--Build--Default Compiler I
 changed it from PdfLateX to XeLateX.
 
+### TeXstudio Releases
+
+https://github.com/texstudio-org/texstudio/releases
+
 ## Notes
 
 I added extra sections into this resume that I would not normally put on my own
