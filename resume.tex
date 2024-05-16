@@ -1,0 +1,178 @@
+%https://mirrors.rit.edu/CTAN/macros/latex/contrib/moderncv/manual/moderncv_userguide.pdf
+\documentclass[11pt,a4paper]{moderncv}
+%\PassOptionsToPackage{moderncvbodyiii,moderncvbodyi}{moderncvskillmatrix}
+%\moderncvstyle{casual}
+\moderncvstyle{banking}
+%\moderncvstyle{classic}
+%\moderncvhead{3}
+%\moderncvbody{1}
+\moderncvcolor{black}
+%\usepackage{fontspec}
+%\setmainfont{Arial}
+\nopagenumbers{}
+\usepackage[T1]{fontenc}
+\usepackage[OT1]{fontenc} 
+%\usepackage{times}
+%\usepackage{lmodern}
+%\usepackage[utf8]{inputenc}
+%\usepackage{ragged2e}
+\usepackage[scale=0.915]{geometry}
+%\usepackage{import}
+\usepackage{multicol}
+%\usepackage{import}
+\usepackage{enumitem}
+%\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{eso-pic,graphicx}
+%\title{Galactic Hero}
+\usepackage{fontawesome5}
+\usepackage[absolute,overlay]{textpos}
+\newcommand*{\myfont}{\fontfamily{lmss}\selectfont}
+\newcommand*{\phoneA}{{\fontspec{code2000.ttf}\symbol{"260E}}}
+\newcommand*{\mobilePhone}{{\fontspec{symbola.ttf}\symbol{"1F4F1}}}
+
+%\firstname{Luke}
+%\lastname{Skywalker}
+%\address{Tatooine}
+\name{Luke}{Skywalker}
+\newcommand*{\customcventry}[7][.53em]{
+	\vspace*{2mm}	
+	\begin{tabular}{@{}l}
+		{\bfseries #4} \
+		{\itshape #3}
+	\end{tabular}
+	\hfill
+	\begin{tabular}{l@{}}
+		{\bfseries #5} \
+		{\itshape #2}
+	\end{tabular}
+	\ifx&#7&%
+	\else{\
+		\begin{minipage}{\maincolumnwidth}%
+			\small#7%
+	\end{minipage}}\fi%
+	\par\addvspace{#1}}
+
+\begin{document}
+	\makecvtitle
+	
+	\begin{textblock*}{3cm}(1cm,1cm) % {block width} (coords) 
+		{\small \faIcon{mobile-alt} \enspace \enspace \href{tel:123-589-7890}{123-589-7890}\newline \faEnvelope[regular] \enspace \href{mailto:skywalker@ahchto.gal}{skywalker@ahchto.gal}}
+	\end{textblock*}
+	
+	\begin{textblock*}{3cm}(15cm,1cm) % {block width} (coords) 
+		%\begin{flushright}
+		{ \small \faGithub \enspace \color{blue} \href{https://github.com/harryjackson}{github.com/lukeskywalker}
+			\faLinkedin \enspace \color{blue}\href{https://www.linkedin.com/in/jacksonharry/}{skywalker}
+		}
+	\end{textblock*}
+	
+	\vspace*{-13mm}
+	\begin{flushleft}  
+		%\section{}
+		\vspace*{0mm}
+		{Grandmaster of the Jedi order over 40 years experience leading dangerous missions both local and remote across imperial and republic tech stacks. Proven record of driving excellence in light sabre technique, force use and Jedi cohesion. Adept at collaborating with cross-system Galactic leadership to shape and execute a safe prosperous Galactic Vision. Expert in Agile Use of the Force, Jedi Engineering and training best practices, team development and fostering a culture of continuous force wielding improvement.}
+		
+		\section{Experience}	
+		\customcventry{30 ‐ 50 ABY}{{\color{blue}\href{https://starwars.fandom.com/wiki/Tatooine/}{(Ahch-To - maybe)}}}{Grandmaster Jedi}{Ahch-To}{}{
+			\vspace*{1mm}
+			{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label={\textbullet}]
+					\item Grandmaster Jedi after the death of Master Yoda, 
+					\item Established and trained a new generation of Jedi to restore balance to the Force
+					\item Developed and implemented curriculum and training programs for young Jedi initiates
+					\item Led numerous missions to counter the resurgence of the Sith and other dark side threats
+					\item Acted as a mediator and diplomat in various intergalactic conflicts
+					\item Re-formed the Jedi Council and became Leader of the Jedi Order
+					\item Sought out by numerous planet governments to come and rid them of Imperial forces left over from the wars
+					\item Created and trained numerous defense forces in order for systems and planets to keep control of their own territories and not cede control to pirates and brigands
+					\item Made it known that the Jedi still exist and are growing in number
+					\item Found numerous Jedi apprentices and paired them with appropriate masters
+		\end{itemize}}}
+		
+		\customcventry{0 ‐ 5 ABY}
+		{{\color{blue}\href{https://starwars.fandom.com/wiki/Luke_Skywalker}{(Tatooine)}}}{Rebel Alliance Fighter Pilot  (later New Republic)
+		}{Tatooine}{}{
+			\vspace*{2mm}
+			{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label={\textbullet}]
+					\item Played crucial role in the Battle of Yavin by firing the shot that destroyed the Death Star (0 BBY)
+					\item Led Rogue Squadron in various critical missions against the Galactic Empire
+					\item Key strategist in the Battle of Hoth, ensuring the survival of the Rebel forces
+					\item Instrumental in the victory at the Battle of Endor, leading to the downfall of Emperor Palpatine and Darth Vader (4 ABY)
+					\item Bravely served in several other Rebel Alliance operations against the Empire
+					\item Honed exceptional starfighter piloting and combat skills
+		\end{itemize}}}
+		
+		
+		
+		\customcventry{19 ‐ 0 ABY} {{\color{blue}\href{https://starwars.fandom.com/wiki/Luke_Skywalker}{(Lars Homestead, Tatooine)}}}{Padawan - Moisture Farmer}{Tatooine}{}{
+			\vspace*{2mm}
+			{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label={\textbullet}]
+					\item Worked with Obi Wan and caused a lot of mayhem
+					\item Met the smuggler Han Solo and Chewbacca, Chewbacca is nice, Han Solo is an acquired taste
+					\item Met R2-D2 and C-3PO and rescued them, I love R2 but C-3PO can be a handful
+					\item Started to learn the ways of the force from Obi Wan 
+					\item Developed technical skills in equipment repair and operations including Droid maintenance
+		\end{itemize}}}	
+		
+		
+		\section{Education}	
+		{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label=\textbullet]	
+				\item \textbf{Jedi -- Intermediate, Compact training on Dagobah under Jedi Master Yoda} \enspace  --  \enspace   {\color{blue}\href{https://starwars.fandom.com/wiki/Dagobah}{Grand Master Yoda}},  Dagobah
+				\item \textbf{Jedi -- Basic, Learned control of the Force, lightsaber skills, and Jedi code} \enspace  --  \enspace   {\color{blue}\href{https://starwars.fandom.com/wiki/Tatooine/}{Master Obi Wan}}, Tatooine
+				\item \textbf{BSc. Moisture farming} \enspace  -- \enspace  {\color{blue}\href{https://www.open.ac.uk/}{The Tatooine University}}, Tatooine
+		\end{itemize}} 
+	
+	
+	\pagebreak
+	
+		\section{Skills}
+		{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label=\textbullet]
+				\item Mastery of Lightsaber Combat: Expert in various forms of lightsaber combat, including defensive and offensive techniques
+				\item Expert Pilot and Starfighter Tactics: Proficient in piloting a wide range of spacecraft and executing complex starfighter maneuvers.
+				\item Advanced Force Abilities: Skilled in telekinesis, mind control, Force healing, and precognition
+				\item Effective leader with a strong track record in planning and executing strategic missions
+				\item Diplomacy and Conflict Resolution: Adept at negotiating peace and resolving conflicts through diplomacy
+				\item Competent in repairing and maintaining various types of machinery and technology
+				\item New Republic Security Clearance (Highest level)
+			\end{itemize}} 
+		
+		\section{Achievements}
+		{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label=\textbullet]
+				\item Successfully led the attack that destroyed the first Death Star, earning galactic recognition.
+				\item Played a crucial role in the redemption of Darth Vader father, Anakin Skywalker, turning him from the dark side
+				\item Founded the New Jedi Order, ensuring the continuation and growth of Jedi traditions and teachings
+				\item Honored by the New Republic as pivotal in the defeat of the Galactic Empire and restoration of peace
+		\end{itemize}} 
+	
+		\section{References}
+		{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label=\textbullet]
+				\item Leia Organa - General, New Republic (Leia.Organa@newrep.gal), full disclosure, she's my sister
+				\item Han Solo - Captain, Millennium Falcon (Han.Solo@freelance.gal)
+				\item Yoda - Jedi Master (Deceased) Can still be contacted
+				\item Obi-Wan Kenobi - Jedi Master (Deceased) Can still be contacted
+		\end{itemize}} 
+		
+		\section{Other}
+		{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label=\textbullet]
+				\item Imperial Academy (Incomplete)
+				\item Incom T-65 X-wing Certification
+				\item New Republic Security Clearance (Highest level)
+		\end{itemize}} 
+		
+		\section{Languages}
+		{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label=\textbullet]
+				\item Basic (Fluent)
+				\item Huttese ()Conversational)
+				\item Binary (Droid Communication) (Basic)
+		\end{itemize}} 
+		
+		\section{Interests}
+		{\begin{itemize}[leftmargin=0.8cm, , rightmargin=0.3cm, label=\textbullet]
+				\item Lightsaber Training
+				\item Meditation and Force Studies
+				\item Piloting and Starship Maintenance
+				\item Exploring the history and artifacts of the Jedi Order
+				\item Large Language Models. I find it exciting that after thousands of years AGI is just around the corner
+		\end{itemize}} 
+	\end{flushleft}  	
+\end{document}
